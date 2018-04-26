@@ -1,4 +1,7 @@
 sudo: false
-language: c
+language: python
+python: 3.6
 
-script: bash looper.sh
+script:
+  - python3 work.py
+  - bash looper.sh
