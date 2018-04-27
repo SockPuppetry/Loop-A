@@ -68,7 +68,7 @@ curl.append("--compressed")
 # Execure cURL
 oprint("Running curl:")
 #oprint(" ".join(curl))
-cp = subprocess.run(curl, stdout=sys.stdout, stderr=sys.stderr)
+cp = subprocess.run(curl, stdout=sys.stdout, stderr=nullfile)
 os.remove(COOKIE_FILE)
 dprint("\nExecuted curl with return value {}".format(cp.returncode))
 sys.exit(cp.returncode)
